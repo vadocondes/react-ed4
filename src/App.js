@@ -1,25 +1,56 @@
-import logo from './logo.svg';
 import './App.css';
+import Hello from './clase1/Hello';
+import Greeting from './clase1/Greeting';
+import ShowName from './clase1/ShowName';
+import ShowDate from './clase1/ShowDate';
+import ConditionalRender from './clase1/ConditionalRender';
+import ShowMessage from './clase1/showMessage';
+import Title from './clase1/Title';
+import Text from './clase1/Text';
+import List from './clase1/List';
+import ListItem from './clase1/ListItem';
+import Link from './clase1/Link';
 
 function App() {
+  /* return (
+    <>
+      <Hello></Hello>
+      <Greeting text="Hola" />
+      <Greeting text="Adiós" />
+      <ShowName></ShowName>
+      <ShowDate></ShowDate>
+      <ShowMessage></ShowMessage>
+      <ConditionalRender></ConditionalRender>
+    </>
+  ); */
+
+/*   <h1>Necesito partir en componentes todo esto</h1>
+<p>Para ello puedo usar React que me permitirá poder reutilizar todos esos componentes. Para ello tengo que:</p>
+<ul>
+  <li>Observar el HTML</li>
+  <li>Pensar en como puedo extraer cada trozo en componentes</li>
+  <li>Usarlos en React</li>
+</ul>
+
+<a href="https://reactjs.org/">React Docs</a> */
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Title>
+        Necesito partir en componentes todo esto
+      </Title>
+      <Text message="Para ello puedo usar React que me permitirá poder reutilizar todos esos componentes. Para ello tengo que:"></Text>
+      <List>
+        <ListItem text="Observar el HTML"></ListItem>
+        <ListItem text="Pensar en como puedo extraer cada trozo en componentes"></ListItem>
+        <ListItem text="Usarlos en React"></ListItem>        
+      </List>
+      <Link to="https://reactjs.org"> React Docs</Link>
+      <br></br>
+      <Link to="https://reactjs.org" openInNewTab> React Docs in new tab</Link>
+
+    </>
+  )
 }
 
 export default App;
