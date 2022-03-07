@@ -1,7 +1,7 @@
 
 const ConditionalRender = ({show, children}) => (
   <>
-    {show ? 'Loading...' : {...children}}
+    {show ? children : 'Loading'}
   </>
 )
 
